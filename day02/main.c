@@ -59,25 +59,5 @@ int main(int argc, char **argv) {
       num[i] = atoi(nums[i]);
   }
 
-  printf("Part #1\n");
-  for (int i = 0; i < ARR_SIZE; i++) {
-    for (int j = i; j < ARR_SIZE; j++) {
-      if (num[i] + num[j] == 2020) {
-        printf("%d, %d, RES: %d\n", num[i], num[j], num[i] * num[j]);
-      }
-    }
-  }
-
-  printf("Part #2\n");
-  for (int i = 0; i < ARR_SIZE; i++)
-    for (int j = i; j < ARR_SIZE; j++)
-      for (int h = j; h < ARR_SIZE; h++) {
-        if (num[i] + num[j] + num[h] == 2020) {
-
-          printf("%d, %d, %d, RES: %d\n", num[i], num[j], num[h],
-                 num[h] * num[i] * num[j]);
-        }
-      }
-
   return 0;
 }
