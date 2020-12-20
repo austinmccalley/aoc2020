@@ -34,9 +34,9 @@ input.forEach((line) => {
   let pass = line.split('-')[1].split(' ')[2].split('')
 
 
-  if (pass[idx1 - 1] == char && pass[idx2 - 1] != char) {
+  if (pass[idx1 - 1] === char && pass[idx2 - 1] != char) {
     ++total2;
-  } else if (pass[idx2 - 1] == char && pass[idx1 - 1] != char) {
+  } else if (pass[idx2 - 1] === char && pass[idx1 - 1] != char) {
     ++total2;
   }
 
@@ -50,7 +50,7 @@ console.log({ total2 })
 function countChar(c, s) {
   let i = 0;
   s.split('').forEach(char => {
-    if (char == c) {
+    if (char === c) {
       ++i;
     }
   })

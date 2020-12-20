@@ -34,7 +34,7 @@ while (y < (inputLength)) {
   if (x >= (input[y].length)) {
     x -= (input[y].length)
   }
-  if (input[y][x] == tree) totalTreesEncountered++;
+  if (input[y][x] === tree) totalTreesEncountered++;
 
   x += xShift;
   y += yShift;
@@ -54,7 +54,7 @@ while (y < (inputLength)) {
   if (x >= (input[y].length)) {
     x -= (input[y].length)
   }
-  if (input[y][x] == tree) totalTreesEncountered++;
+  if (input[y][x] === tree) totalTreesEncountered++;
 
   x += xShift;
   y += yShift;
@@ -72,7 +72,7 @@ while (y < (inputLength)) {
   if (x >= (input[y].length)) {
     x -= (input[y].length)
   }
-  if (input[y][x] == tree) totalTreesEncountered++;
+  if (input[y][x] === tree) totalTreesEncountered++;
 
   x += xShift;
   y += yShift;
@@ -90,7 +90,7 @@ while (y < (inputLength)) {
   if (x >= (input[y].length)) {
     x -= (input[y].length)
   }
-  if (input[y][x] == tree) totalTreesEncountered++;
+  if (input[y][x] === tree) totalTreesEncountered++;
 
   x += xShift;
   y += yShift;
@@ -108,7 +108,7 @@ while (y < (inputLength)) {
   if (x >= (input[y].length)) {
     x -= (input[y].length)
   }
-  if (input[y][x] == tree) totalTreesEncountered++;
+  if (input[y][x] === tree) totalTreesEncountered++;
 
   x += xShift;
   y += yShift;
@@ -126,7 +126,7 @@ while (y < (inputLength)) {
   if (x >= (input[y].length)) {
     x -= (input[y].length)
   }
-  if (input[y][x] == tree) totalTreesEncountered++;
+  if (input[y][x] === tree) totalTreesEncountered++;
 
   x += xShift;
   y += yShift;

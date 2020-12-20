@@ -55,17 +55,17 @@ validPassports = []
 passports.forEach(passport => {
   let checks = [false, false, false, false, false, false, false]
 
-  checks[0] = passport.hasOwnProperty('byr') && passport?.byr.length == 4 && parseInt(passport.byr) >= 1920 && parseInt(passport.byr) <= 2002
-  checks[1] = passport.hasOwnProperty('iyr') && passport?.iyr.length == 4 && parseInt(passport.iyr) >= 2010 && parseInt(passport.byr) <= 2020
-  checks[2] = passport.hasOwnProperty('eyr') && passport?.eyr.length == 4 && parseInt(passport.eyr) >= 2020 && parseInt(passport.eyr) <= 2030
+  checks[0] = passport.hasOwnProperty('byr') && passport?.byr.length === 4 && parseInt(passport.byr) >= 1920 && parseInt(passport.byr) <= 2002
+  checks[1] = passport.hasOwnProperty('iyr') && passport?.iyr.length === 4 && parseInt(passport.iyr) >= 2010 && parseInt(passport.byr) <= 2020
+  checks[2] = passport.hasOwnProperty('eyr') && passport?.eyr.length === 4 && parseInt(passport.eyr) >= 2020 && parseInt(passport.eyr) <= 2030
 
   if (passport.hasOwnProperty('hgt') && /[0-9]{2,3}[a-zA-Z]{2}/gm.test(passport.hgt)) {
     const h = passport.hgt.substr(0, passport.hgt.length - 2)
     const units = passport.hgt.substr(passport.hgt.length - 2, passport.hgt.length)
 
-    if (units == "cm") {
+    if (units === "cm") {
       checks[3] = parseInt(h) >= 150 && parseInt(h) <= 193
-    } else if (units == "in") {
+    } else if (units === "in") {
       checks[3] = parseInt(h) >= 59 && parseInt(h) <= 76
     }
   }
